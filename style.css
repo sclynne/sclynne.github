@@ -138,7 +138,7 @@ body.escuro #botaoTema {
 .hero {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(21, 11, 37, 0.55), rgba(21, 11, 37, 0.75)), url("hero.jpg");
+    background-image: linear-gradient(rgba(21, 11, 37, 0.55), rgba(21, 11, 37, 0.75)), url("hero.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
