@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Portfólio da Carolynne</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="cursor" aria-hidden="true"></div>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#inicio">Portfólio da Carolynne</a>
+        <ul class="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contatos</a></li>
+        </ul>
+        <button id="botaoTema" type="button">
+            <i id="iconeTema" class="bi bi-moon-stars"></i>
+            <span id="textoBotao">Modo escuro</span>
+        </button>
+    </nav>
+    <section id="inicio" class="hero">
+        <div class="hero-conteudo">
+            <h1>Olá, bem-vindo(a/e) ao meu portfólio.</h1>
+            <h2>Eu me chamo Suellen Carolynne!</h2>
+            <h3>Estudante de Ciência da Computação na UDF</h3>
+            <a href="#projetos" class="botao">Conheça meus projetos!</a>
+            <div class="redes-sociais">
+                <a href="https://github.com/sclynne" target="_blank" rel="noopener noreferrer" class="github">
+                    <i class="bi bi-github"></i> Meu GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="secao-vidro">
+        <h2>Sobre mim</h2>
+        <p>
+            Sou estudante de Ciência da Computação na UDF e estou atualmente finalizando o segundo semestre. Tenho interesse em programação e junto ao coração de artista mantenho o foco em design gráfico e desenvolvimento de front-end. Procuro evoluir as minhas habilidades em criação de sites e design!
+        </p>
+        <h3>Tecnologias, linguagens e idiomas em estudo atualmente:</h3>
+        <div class="badges">
+            <span><i class="bi bi-filetype-html"></i> HTML</span>
+            <span><i class="bi bi-filetype-css"></i> CSS</span>
+            <span><i class="bi bi-filetype-js"></i> JavaScript</span>
+            <span><i class="bi bi-filetype-py"></i> Python</span>
+            <span><i class="bi bi-database"></i> MySQL</span>
+            <span><i class="bi bi-code-slash"></i> C</span>
+            <div class="badges">
+                <span><i class="bi bi-translate"></i> Inglês (Intermediário) e Francês (Iniciante)</span>
+            </div>
+        </div>
+    </section>
+    <section id="hobbies" class="secao-vidro">
+        <h2>Meus hobbies e interesses 𓏲ּ𝄢</h2>
+        <div class="botoes-hobbies">
+            <button type="button" onclick="mostrarHobby('musica')">
+                <i class="bi bi-music-note"></i> Música
+            </button>
+            <button type="button" onclick="mostrarHobby('livros')">
+                <i class="bi bi-book"></i> Livros Literários
+            </button>
+            <button type="button" onclick="mostrarHobby('arte')">
+                <i class="bi bi-pen"></i> Ilustrações e colagens
+            </button>
+            <button type="button" onclick="mostrarHobby('edicao')">
+                <i class="bi bi-cast"></i> Edição de vídeos e imagens
+            </button>
+        </div>
+        <div id="musica" class="descricao-hobby">
+            <h2>Música</h2>
+            <p>Gosto de diversos gêneros musicais, entre eles está o K-POP, POP, Rock e J-rock. Minhas bandas favoritas são: BTS ⊙⊝⊜ ⁷, Panic!At the disco 💿, Metallica 🎸 e Malice Mizer 🕸!</p>
+        </div>
+        <div id="livros" class="descricao-hobby">
+            <h2>Livros Literários</h2>
+            <p>Tenho preferência em livros de ficção, investigação junto de mangás e romance.</p>
+        </div>
+        <div id="arte" class="descricao-hobby">
+            <h2>Ilustrações e colagens</h2>
+            <p>Faço edições de imagens em meu Pinterest e artes junto de serviços de papelaria (como kits de fã) em meu Instagram.</p>
+        </div>
+        <div id="edicao" class="descricao-hobby">
+            <h2>Edição de vídeos e imagens</h2>
+            <p>Faço edições de vídeo por diversão e imagens que fotografo por diversão.</p>
+        </div>
+    </section>
+    <section id="gallery" class="galeria">
+        <h1>Galeria de Fotos dos meus Hobbies</h1>
+        <div class="container-galeria">
+            <img src="1.jfif" alt="Edição do filme KYARAKUTA 2021 por @woykiwa no Pinterest.">
+            <img src="2.jfif" alt="Edição do streamer Bastet e seu personagem Henri / Juan do RPG HEXATOMBE por @woykiwa no Pinterest.">
+            <img src="3.jfif" alt="Fotografia de arvore e plantas por sclynne">
+            <img src="4.jfif" alt="Fotografia dos membros Rawhyun e Yunhyeok do grupo de K-POP NTX no K-festival 2026 por sclynne">
+            <img src="5.jfif" alt="Fotografia construindo um site na aula de Desenvolvimento Front-End Para Web, do professor Eliel com MOD de verificação de código do Taehyung do BTS por sclynne">
+            <img src="6.jfif" alt="Criadora do site lendo a obra Drácula de Bram Stoker">
+        </div>
+    </section>
+    <section id="contato" class="secao-vidro">
+        <h2><i class="bi bi-envelope"></i> Gostou de algum projeto? Entre em contato comigo!</h2>
+        <form id="formContato">
+            <label for="nomeContato">Nome</label>
+            <input type="text" id="nomeContato" placeholder="Seu nome" required>
+            <label for="emailContato">E-mail</label>
+            <input type="email" id="emailContato" placeholder="Seu e-mail" required>
+            <label for="mensagemContato">Mensagem</label>
+            <textarea id="mensagemContato" placeholder="Escreva a sua mensagem" rows="5" required></textarea>
+            <button type="submit" class="botao-contato">
+                <i class="bi bi-send"></i> Enviar mensagem
+            </button>
+            <div class="redes-sociais">
+                <a href="https://www.linkedin.com/in/suellen-carolynne-605296391/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="mailto:sclyqueiroz@gmail.com">
+                    <i class="bi bi-envelope"></i>
+                </a>
+            </div>
+        </form>
+    </section>
+    <footer class="rodape">
+        <p>© 2026 Suellen Carolynne | sclynne ୨୧ : Desenvolvido por: <a href="mailto:sclyqueiroz@gmail.com">SCLYNNE</a>.</p>
+    </footer>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
