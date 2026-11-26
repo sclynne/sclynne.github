@@ -712,7 +712,6 @@ button:focus-visible {
     .container-galeria img {
         height: 200px;
     }
-}
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
